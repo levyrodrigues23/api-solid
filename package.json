@@ -1,0 +1,28 @@
+{
+  "name": "api-solid",
+  "version": "1.0.0",
+  "description": "Gympass style app",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "prisma": "7.9.1",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@prisma/client": "7.9.1",
+    "dotenv": "17.4.2",
+    "fastify": "^5.11.3",
+    "zod": "4.4.3"
+  }
+}

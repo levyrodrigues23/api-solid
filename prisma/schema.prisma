@@ -13,7 +13,7 @@ datasource db {
 }
 
 model User {
-  id    String @id @default(uuid()) // uuid foi usado aqui justamente porque é mais seguro tendo em vista que o id é publico e pode ser acessado por qualquer usuario, mas se não é publicamente e sim privado, então seria melhor usar o auto incremento.
+  id    String @id @default(dbgenerated("gen_random_uuid()::text"))
   name  String
   email String @unique
 

@@ -3,7 +3,7 @@
 Gympass style app
 
 ## RFs
-- [ ] Deve ser possível se cadastrar.
+- [x] Deve ser possível se cadastrar.
 - [ ] Deve ser possível se autenticar
 - [ ] Deve ser possível obter o perfil de um usuário logado
 - [ ] Deve ser possível obter o número de checkins realizados pelo usuário logado
@@ -17,7 +17,7 @@ Gympass style app
 
 ## RNs
 
-- [ ] O usuário não deve poder se cadastrar com um email duplicado
+- [x] O usuário não deve poder se cadastrar com um email duplicado
 - [ ] O usuário nao pode fazer 2 checkins no mesmo dia
 - [ ] O usuário nao pode fazer chekin se não estiver perto da academia (uns 100 metros)
 - [ ] O check-in so pode ser validado por administradores
@@ -25,7 +25,7 @@ Gympass style app
 
 ## RNFs
 
-- [ ] A senha do usuário precisa estar criptografada
+- [x] A senha do usuário precisa estar criptografada
 - [ ] Os dados da aplicação precisam estar persistidos em um banco PostgreeSQL
 - [ ] Todas as listas de dados precisam estar paginadas com 20 itens por página 
 - [ ] O usuário deve ser identificado por um jwt (json web token)

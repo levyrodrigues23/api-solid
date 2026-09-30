@@ -20,7 +20,7 @@ describe('Register Use Case', () => {
         })
 
         const isPasswordCorrectlyHashed = await compare(
-            '123456',
+            'teste',
             user.password_hash
         )
 
@@ -40,13 +40,13 @@ describe('Register Use Case', () => {
             password: 'teste'
         })
 
-        expect(() =>
+        await expect(() =>
             registerUseCase.execute({
                 name: 'teste',
                 email,
                 password: 'teste'
             }),
-        ).rejects.toBeInstanceOf(userAlreadyExistsError) // tomara que de erro e que seja instanciado pelo user already exists error
+        ).rejects.toBeInstanceOf(userAlreadyExistsError)
 
 
 
